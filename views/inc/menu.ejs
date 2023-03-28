@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Ch - API</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home
+                        <span class="visually-hidden">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+
+
+            </ul>
+            <!-- <form class="d-flex">
+                <input class="form-control me-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="langue" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">English</a>
+                    <div class="dropdown-menu">
+                        <!-- <script type="text/javascript">
+                            function handleLangs() {
+                                let en = document.getElementById('en').id;
+                                let fr = document.getElementById('fr').id;
+                                let ar = document.getElementById('ar').id;
+                                if (en == 'en') {
+                                    console.log(en);
+                                } else if (fr == 'fr') {
+                                    console.log(fr);
+                                } else {
+                                    console.log(ar);
+                                }
+
+
+                            }
+
+                            //document.getElementById("en").addEventListener("click", handleLangs());
+
+
+
+                        </script> -->
+                        <% langs.forEach((lang)=> { %>
+                            <a class="dropdown-item" id="<%= lang.lang_code %>" href="javascript:void(0);">
+                                <%= lang.lang_name %>
+                            </a>
+                            <% }); %>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Settings</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- <ul>
+    <li>langs</li>
+    <% langs.forEach((lang)=> { %>
+        <ol id="<%= lang.code %>">
+            <%= lang.lang_name %>
+        </ol>
+        <% }); %>
+</ul> -->

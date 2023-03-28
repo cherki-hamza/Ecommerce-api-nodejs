@@ -1,0 +1,107 @@
+<div class="container fixed-bottom text-center" style="bottom: 50px;">
+    <footer>Copyright (c) 2023 | cherki-hamza</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/translate@1/translate.min.js"></script>
+<script type="module">
+    // Omit this line if loading form a CDN
+    const translate = window.translate;
+
+    // check the lang
+    let check_lang = () => {
+        // get langs
+        let en = document.getElementById('en');
+        let fr = document.getElementById('fr');
+        let ar = document.getElementById('ar');
+
+        en.onclick = (e) => {
+            e.preventDefault();
+            localStorage.setItem('Lang', 'en');
+            document.getElementById('langue').innerText = 'Engish';
+
+            en.onchange = () => {
+                setLangue(localStorage.getItem('Lang'));
+            }
+            console.log('en checking..');
+        }
+
+        fr.onclick = (e) => {
+            e.preventDefault();
+            localStorage.setItem('Lang', 'fr');
+            document.getElementById('langue').innerText = 'Franch';
+
+            fr.onchange = () => {
+                setLangue(localStorage.getItem('Lang'));
+            }
+
+            console.log('fr checking..');
+        }
+
+        ar.onclick = (e) => {
+            e.preventDefault();
+            localStorage.setItem('Lang', 'ar');
+            document.getElementById('langue').innerText = 'Arabic';
+
+            ar.onchange = () => {
+                setLangue(localStorage.getItem('Lang'));
+            }
+
+            console.log('ar checking..');
+        }
+
+    }
+
+
+
+
+    // set langue
+    let setLangue = async (the_langue) => {
+        //check_lang();
+        // Omit this line if loading form a CDN
+        const translate = window.translate;
+        let hello = document.getElementById('title').innerText;
+        if (the_langue === 'fr') {
+            document.getElementById('title').innerText = await translate(hello, 'fr');
+        } else if (the_langue === 'ar') {
+            document.getElementById('title').innerText = await translate(hello, 'ar');
+        } else {
+            document.getElementById('title').innerText = await translate(hello, 'en');
+        }
+    }
+
+    check_lang();
+
+
+    /* onload = () => {
+        setLangue(localStorage.getItem('Lang'));
+    } */
+
+    /* let lang = async () => {
+        // Omit this line if loading form a CDN
+        const translate = window.translate;
+
+
+        // get langs
+        let en = document.getElementById('en');
+        let fr = document.getElementById('fr');
+        let ar = document.getElementById('ar');
+        //
+        let hello = document.getElementById('title').innerText;
+        let fr_title = await translate(hello, 'fr');
+        document.getElementById('title').innerText = fr_title;
+
+        //const text = await translate("Hello from america", "ar");
+        console.log(fr_title);
+
+        check_lang();
+    } */
+    //lang();
+
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>hello from home page : <%= content %>
+    </h1>
+    <br><br>
+    <h4>
+        <%= content %>
+    </h4> <br>
+    <h5 style="color:red">{{title}}</h5>
+
+    <br><br>
+
+    <ul id="hpac" class="list-group">
+        <li class="list" v-for="(lang,index) in langs">{{lang.lang_name}}</li>
+    </ul>
+    <br><br>
+    <h6>{{check_lang}}</h6>
+    <br><br>
+    <h3 class="text-warning">{{count}}</h3>
+    <span @click="increment" class="btn btn-primary mr-3">+</span> | <span @click="decrement" class="btn btn-danger mr-3">-</span>
+
+    <div id="canva"></div>
+</div>

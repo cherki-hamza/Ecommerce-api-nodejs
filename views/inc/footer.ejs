@@ -1,0 +1,84 @@
+<div class="container fixed-bottom text-center" style="bottom: 50px;">
+    <footer>Copyright (c) 2023 | cherki-hamza</footer>
+</div>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="../../public/js/my_script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/translate@1/translate.min.js"></script>
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script type="module">
+    // Omit this line if loading form a CDN
+    const translate = window.translate;
+
+    let lang = async () => {
+        // Omit this line if loading form a CDN
+        const translate = await window.translate;
+        console.log(translate);
+
+        /*  // get langs
+         let en = document.getElementById('en');
+         let fr = document.getElementById('fr');
+         let ar = document.getElementById('ar');
+         //
+         let hello = document.getElementById('title').innerText;
+         let fr_title = await translate(hello, 'fr');
+         document.getElementById('title').innerText = fr_title;
+ 
+         //const text = await translate("Hello from america", "ar");
+         //console.log(fr_title); */
+
+
+    }
+
+    /*  let langs = [
+         { lang_code: 'EN', lang_name: 'English' },
+         { lang_code: 'FR', lang_name: 'Fransh' },
+         { lang_code: 'AR', lang_name: 'Arabic' },
+     ] */
+
+    lang();
+
+    // handele onclick
+    let fullstack = (e) => {
+        e.preventDefault();
+    }
+
+    let seyHello = () => {
+        console.log('hello from helper');
+    }
+
+
+
+</script>
+
+<!-- Load the library -->
+<!-- <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script> -->
+
+<!-- /* Basic and simple one */ -->
+<!-- <script type="text/javascript">
+    new QRCode(document.getElementById("canva"), "http://hamzacherki.com");
+</script> -->
+
+<!-- /*With some options*/ -->
+
+
+<!-- <script type="text/javascript">
+    var qrcode = new QRCode(document.getElementById("canva"), {
+        text: "http://hamzacherki.com",
+        width: 128,
+        height: 128,
+        colorDark: "#5868bf",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+</script>
+ -->
+
+
+</div><!-- end of main index-->
+</body>
+
+</html>

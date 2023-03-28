@@ -1,0 +1,44 @@
+[
+    {
+        "_id": "63dd5af697a450f23b1a7da2",
+        "name": "Xiaomi",
+        "slug": "xiaomi",
+        "createdAt": "2023-02-03T19:05:26.489Z",
+        "updatedAt": "2023-02-03T19:05:26.489Z"
+    },
+    {
+        "_id": "63dd5b0297a450f23b1a7da4",
+        "name": "Samsung",
+        "slug": "samsung",
+        "createdAt": "2023-02-03T19:05:38.498Z",
+        "updatedAt": "2023-02-03T19:05:38.498Z"
+    },
+    {
+        "_id": "63dd5b0997a450f23b1a7da6",
+        "name": "Dell",
+        "slug": "dell",
+        "createdAt": "2023-02-03T19:05:45.218Z",
+        "updatedAt": "2023-02-03T19:05:45.218Z"
+    },
+    {
+        "_id": "63dd5b1597a450f23b1a7da8",
+        "name": "Nike",
+        "slug": "nike",
+        "createdAt": "2023-02-03T19:05:57.998Z",
+        "updatedAt": "2023-02-03T19:05:57.998Z"
+    },
+    {
+        "_id": "63dd5b1c97a450f23b1a7daa",
+        "name": "Adidas",
+        "slug": "adidas",
+        "createdAt": "2023-02-03T19:06:04.610Z",
+        "updatedAt": "2023-02-03T19:06:04.610Z"
+    },
+    {
+        "_id": "63dd684c525bdab2d76ca357",
+        "name": "hp laptop",
+        "slug": "hp-laptop",
+        "createdAt": "2023-02-03T20:02:20.962Z",
+        "updatedAt": "2023-02-03T20:02:20.962Z"
+    }
+]
